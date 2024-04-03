@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".toform1">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/v1">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:id="@+id/v"
+            android:src="@drawable/logo"
+            android:layout_marginTop="2dp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:text="Visitor Details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:id="@+id/title"
+        android:fontFamily="@font/lemon" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/black"
+        android:hint="Full Name" />
+
+    <EditText
+        android:id="@+id/ph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="phone"
+        android:hint="Phone Number" />
+
+
+    <EditText
+        android:id="@+id/purp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ph"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/black"
+        android:layout_marginRight="20dp"
+        android:inputType="text"
+        android:hint="Purpose of visit" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who You Are"
+        android:id="@+id/who"
+        android:textColor="@color/black"
+        android:layout_below="@+id/purp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        />
+
+
+    <Spinner
+        android:id="@+id/opt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Who you are"
+        android:entries="@array/purpose"
+        />
+
+
+    <EditText
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/opt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        android:hint="InTime" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/in"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/submit"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+
+
+</RelativeLayout>
